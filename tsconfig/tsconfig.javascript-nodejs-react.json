@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.javascript-nodejs.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "types": [
+      "node",
+      "react",
+      "react-dom"
+    ]
+  }
+}

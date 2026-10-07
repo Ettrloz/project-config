@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "incremental": true,
+    "rootDir": "src",
+    "declaration": true,
+    "declarationDir": "types",
+    "declarationMap": true,
+    "emitDeclarationOnly": true
+  },
+  "include": [
+    "src"
+  ]
+}

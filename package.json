@@ -1,0 +1,44 @@
+{
+  "name": "@ettrloz/project-config",
+  "description": "Javascript and Typescript project configuration",
+  "version": "0.0.1",
+  "author": "Ettrloz",
+  "license": "MIT",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./types/index.d.ts",
+  "files": [
+    "dist",
+    "package.json",
+    "types"
+  ],
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./*": {
+      "types": "./types/*/index.d.ts",
+      "import": "./dist/*/index.mjs",
+      "require": "./dist/*/index.cjs"
+    },
+    "./tsconfig/*": "./tsconfig/*"
+  },
+  "scripts": {
+    "build": "tsdown src --output dist --unbundle --clean --format esm,cjs --dts false --sourcemap && npm run generate-types",
+    "generate-types": "tsc",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "oxlint": "^1.87.0",
+    "prettier": "^3.9.9"
+  },
+  "devDependencies": {
+    "tsdown": "^0.23.0",
+    "typescript": "^7.0.2"
+  }
+}

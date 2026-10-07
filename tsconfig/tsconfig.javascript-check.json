@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.javascript-nodejs-react.json",
+  "compilerOptions": {
+    "noEmit": true
+  }
+}
