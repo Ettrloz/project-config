@@ -1,7 +1,7 @@
 {
   "name": "@ettrloz/project-config",
   "description": "Javascript and Typescript project configuration",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Ettrloz",
   "license": "MIT",
   "main": "./dist/index.cjs",
