@@ -15,11 +15,9 @@ export const config: Config = {
       }
     },
     {
-      files: [
-        '**/*.vue'
-      ],
+      files: ['**/*.vue'],
       options: {
-        vueIndentStyleAndScript: true
+        vueIndentScriptAndStyle: true
       }
     }
   ]
