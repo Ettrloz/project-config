@@ -27,7 +27,7 @@
     "./tsconfig/*": "./tsconfig/*"
   },
   "scripts": {
-    "build": "tsdown src --output dist --unbundle --clean --format esm,cjs --dts false --sourcemap && npm run generate-types",
+    "build": "tsdown --root src --output dist --unbundle --clean --format esm,cjs --dts false --sourcemap && npm run generate-types",
     "generate-types": "tsc",
     "type-check": "tsc --noEmit"
   },
