@@ -148,4 +148,5 @@ vite.config.ts.timestamp-*
 # Turbo Repo
 .turbo
 
+*.tsbuildinfo
 types/

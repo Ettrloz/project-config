@@ -9,11 +9,17 @@ export const config: Config = {
   trailingComma: 'none',
   overrides: [
     {
-      files: [
-        '**/*.{css,scss,sass,less,styl}'
-      ],
+      files: ['**/*.{css,scss,sass,less,styl}'],
       options: {
         singleQuote: false
+      }
+    },
+    {
+      files: [
+        '**/*.vue'
+      ],
+      options: {
+        vueIndentStyleAndScript: true
       }
     }
   ]
